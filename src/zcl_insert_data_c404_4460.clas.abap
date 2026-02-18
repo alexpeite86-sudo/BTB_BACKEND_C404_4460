@@ -13,7 +13,8 @@ ENDCLASS.
 
 
 
-CLASS zcl_insert_data_c404_4460 IMPLEMENTATION.
+CLASS ZCL_INSERT_DATA_C404_4460 IMPLEMENTATION.
+
 
   METHOD if_oo_adt_classrun~main.
 
@@ -216,5 +217,4 @@ CLASS zcl_insert_data_c404_4460 IMPLEMENTATION.
         out->write( 'DONE!' ).
 
   ENDMETHOD.
-
 ENDCLASS.
