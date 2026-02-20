@@ -7,11 +7,12 @@
     title: {
             type: #STANDARD,
             value: 'Tittle'
-             },
+           },
+
      description: {
                     type: #STANDARD,
                     value: 'Author'
-     }
+                  }
     }
 @Search.searchable: true
 annotate entity ZC_LIBROS_4460 with
@@ -42,7 +43,7 @@ annotate entity ZC_LIBROS_4460 with
                     importance: #HIGH  }],
           selectionField: [{ position: 10 }]
         }
-        
+
   Tittle;
   @Search.defaultSearchElement: true
   @Search.fuzzinessThreshold: 0.9
@@ -50,41 +51,41 @@ annotate entity ZC_LIBROS_4460 with
   @UI: { selectionField: [{ position: 40 }] }
   @UI: { lineItem: [{ position: 81,
                      importance: #HIGH  }]}
-                     
+
   Editorial;
   @UI: { lineItem: [{ position: 20,
                        importance: #HIGH  }]}
-                       
+
   Author;
   @Consumption.valueHelpDefinition: [{ entity: { name: 'ZC_CATEGO_4460',
-                                                 element: 'Descripcion' } }]
+                                                 element: 'Description' } }]
   @UI: { fieldGroup: [{ qualifier: 'DetallesLibro',
                         position: 20 }],
          selectionField: [{ position: 20 }] }
-         
+
   Category;
   @UI: { lineItem: [{ position: 30,
                       importance: #HIGH  }]}
-                      
+
   BookFormat;
   @UI: { lineItem: [{ position: 40,
                      importance: #HIGH  }]}
-                     
+
   Language;
   @UI: { lineItem: [{ position: 50,
                       importance: #HIGH  }]}
-                      
+
   PagesNumber;
   @UI: { lineItem: [{ position: 60,
                          importance: #HIGH  }]}
-                         
+
   Price;
   @UI: { lineItem: [{ position: 70,
                       label: 'Ventas',
                       importance: #HIGH,
                       value: 'Description',
                       criticality: 'Sales'  }]}
-                      
+
   Sales;
   @UI: { fieldGroup: [{ qualifier: 'DetallesLibro',
                        position: 30 }]}
